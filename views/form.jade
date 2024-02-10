@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 Submit Your Message
+  form(method='Post', action='/new')
+    label(for='author') enter your name:
+    input(type='text', name='author', id='author', required)
+    label(for='text') enter message: 
+    textarea(cols="30", rows="10", type='text', name='text', id='text', required)
+    input(type='submit', value='Submit')
